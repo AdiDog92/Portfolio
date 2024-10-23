@@ -1,0 +1,39 @@
+/* Header */
+
+.header {
+  position: fixed;
+  inset: auto 0;
+  background: transparent;
+  padding: 15px 0;
+
+  .header__logo {
+    font-weight: 500;
+    line-height: 42px;
+  }
+
+  .header__logo strong {
+    color: #12F7D6;
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__list {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+
+  .header__list-item a {
+    display: inline-block;
+    padding: 15px;
+    transition: .3s ease;
+
+    &:hover {
+      color: #12F7D6;
+    }
+  }
+}

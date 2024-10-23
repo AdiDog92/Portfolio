@@ -1,0 +1,113 @@
+/* hero */
+
+.hero {
+  background: linear-gradient(360deg, #1F242DD9 100%, #073AFF00 100%),
+  url("../../img/hero_bg.jpg") center / 100% 100% no-repeat;
+
+  .hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .hero__left {
+    max-width: 517px;
+  }
+
+  .hero__title {
+    margin-bottom: 11px;
+    font-size: 52px;
+    font-weight: 600;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 11px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #12F7D6;
+  }
+
+  .hero__description {
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  .social__list {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 32px;
+  }
+
+  .social__item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #12F7D6;
+    border: 2px solid #12F7D6;
+  }
+
+  .hero__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+  }
+
+  .hero__btn {
+    padding: 9px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #12F7D6;
+    border-radius: 19px;
+  }
+
+  .hero__right {
+    margin: 0 auto;
+  }
+
+  .hero__img-wrapper {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    background: #12F7D6;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      background: inherit;
+      content: '';
+      border: inherit;
+
+    }
+
+    &:before {
+      transform: rotate(60deg);
+      filter: drop-shadow(14px 3px 23px #12F7D6);
+    }
+
+    &::after {
+      transform: rotate(-60deg);
+      filter: drop-shadow(-14px 3px 23px #12F7D6);
+    }
+
+    p {
+      position: absolute;
+      text-align: center;
+      z-index: 1;
+      inset: 50% 0;
+      color: #000;
+      filter: drop-shadow(-14px 3px 23px #000);
+    }
+  }
+
+}
