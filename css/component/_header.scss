@@ -2,6 +2,7 @@
 
 .header {
   position: fixed;
+  z-index: 10;
   inset: auto 0;
   background: transparent;
   padding: 15px 0;
@@ -22,18 +23,62 @@
   }
 
   .header__list {
+    position: fixed;
+    left: 64px;
+    top: 64px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 19px;
+    gap: 24px;
+    padding: 8px 12px;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: #1A1E23;
   }
 
-  .header__list-item a {
-    display: inline-block;
-    padding: 15px;
-    transition: .3s ease;
+  .header__list-item {
+    a {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      transition: 1s ease;
+      border-radius: 50%;
 
-    &:hover {
-      color: #12F7D6;
+      &:hover {
+        color: #12F7D6;
+
+        .text {
+          opacity: 1;
+        }
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 70px;
+        display: block;
+        padding: 8px 16px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        color: #292F36;
+        border-radius: 8px;
+        background: #FFF;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: .2s ease;
+      }
+    }
+
+    &.active {
+      a {
+        background-color: #fff;
+        color: #292F36;
+      }
     }
   }
+
 }

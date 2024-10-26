@@ -1,0 +1,122 @@
+.contacts {
+  background-color: #1F242D;
+
+  .contacts__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .contacts__title {
+    margin: 0 auto 64px;
+  }
+
+  .social__list {
+    margin: 0 auto 32px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 128px;
+    max-width: 1120px;
+    width: 100%;
+
+    label {
+      display: flex;
+      flex: 1 0 auto;
+      width: calc(50% - 128px);
+      flex-direction: column;
+
+      span {
+        margin-bottom: 24px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        color: #12F7D6;
+      }
+
+      &:has(textarea) {
+        flex: 1 0 auto;
+        width: 100%;
+      }
+
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #98faec;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      background-color: transparent;
+      transition: .3s ease;
+
+      &::placeholder {
+        color: #fff;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        border-color: #98FAEC;
+        border-radius: 12px;
+      }
+    }
+
+    textarea {
+      padding: 8px;
+      border: 1px solid #98FAEC;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      background-color: transparent;
+      transition: .3s ease;
+      resize: none;
+
+      &::placeholder {
+        color: #FFF;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        border-color: #98FAEC;
+        border-radius: 12px;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 32px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      background-color: #12F7D6;
+      border-radius: 32px;
+      border: 2px solid transparent;
+      transition: .3s ease;
+      color: #292F36;
+
+      &:hover {
+        background: #FFF;
+      }
+
+      &:active {
+        border-color: #12F7D6;
+        background: #292F36;
+        color: #fff;
+      }
+    }
+
+  }
+}

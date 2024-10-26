@@ -1,9 +1,124 @@
+/* skills */
+
 .skills {
+  background-color: #1F242D;
+
   .skills__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+  }
+
+  .skills__description {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  .skills__card {
+    margin-bottom: 45px;
+    padding: 16px 24px 16px 32px;
+    border-radius: 8px;
+    border-left: 8px solid #0C73B8;
+    background: var(--Brand-2, #98FAEC);
+  }
+
+  .skills__card-img {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 8px;
+  }
+
+  .skills__card-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #292F36;
+  }
+
+  .skills__card-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #43454D;
+    text-align: center;
+  }
+
+  .skills__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .skills__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    height: 104px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    color: #fff;
+
+    &--html {
+      background-color: #E54F26;
+      filter: drop-shadow(0px 3px 11px #E54F26);
+
+    }
+
+    &--css {
+      background-color: #0C73B8;
+      filter: drop-shadow(0px 3px 11px #0C73B8);
+    }
+
+    &--html {
+      background-color: #E54F26;
+      filter: drop-shadow(0px 3px 11px #E54F26);
+    }
+
+    &--scss {
+      background-color: #bf4080;
+      filter: drop-shadow(0px 3px 11px #bf4080);
+    }
+
+    &--js {
+      background-color: #E7A020;
+      filter: drop-shadow(0px 3px 11px #E7A020);
+    }
+
+    &--jquery {
+      background-color: #0769ad;
+      filter: drop-shadow(0px 3px 11px #0769ad);
+    }
+
+    &--react {
+      background-color: #28A9E0;
+      filter: drop-shadow(0px 3px 11px #28A9E0);
+    }
+
+    &--wordpress {
+      background-color: #213fd4;
+      filter: drop-shadow(0px 3px 11px #213fd4);
+    }
+
+    &--figma {
+      background-color: #A259FF;
+      filter: drop-shadow(0px 3px 11px #A259FF);
+    }
   }
 }
