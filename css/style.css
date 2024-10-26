@@ -283,7 +283,7 @@ main {
 
 /* hero */
 .hero {
-  background: linear-gradient(360deg, rgba(31, 36, 45, 0.8509803922) 100%, rgba(7, 58, 255, 0) 100%), url("../../img/hero_bg.jpg") center/100% 100% no-repeat;
+  background: linear-gradient(360deg, rgba(31, 36, 45, 0.8509803922) 100%, rgba(7, 58, 255, 0) 100%), url("../img/hero_bg.jpg") center/100% 100% no-repeat;
 }
 .hero .hero__inner {
   display: flex;
